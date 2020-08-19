@@ -1,21 +1,20 @@
 # Utiliza está plantilla y crea tus proyectos 
 
 ## sigue las siguientes instruciones
-    ### Clona el proyecto a tu pc o laptop
-    ```
+ ### Clona el proyecto a tu pc o laptop
+    
     git clone 
-    ```
-     ### Resconstruye el proyecto
-    ``
+   
+ ### Resconstruye el proyecto
+    
     npm install
-    ``
-    ### Ahora ejecuta el siguiente comando
-
-    ``
+    
+ ### Ahora ejecuta el siguiente comando
+ 
     npm run build
-    ``
-     ### O el comando para desarrollo
-    ``
+    
+ ### O el comando para desarrollo
+    
     npm start
-    ``
-    ### listo!! ya tienes tu entorno de trabajo
+    
+ ### listo!! ya tienes tu entorno de trabajo
