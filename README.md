@@ -3,7 +3,7 @@
 ## sigue las siguientes instruciones
  ### Clona el proyecto a tu pc o laptop
     
-    git clone 
+    git clone https://github.com/Avimael95/Webpack-plantilla.git
    
  ### Resconstruye el proyecto
     
