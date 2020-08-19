@@ -1,10 +1,9 @@
 const Path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin= require('mini-css-extract-plugin');
-const loader = require('sass-loader');
-
+const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 module.exports ={
-    mode:'development',
+    mode:'production',
     entry:'./src/index.js',
     output:{
         path:Path.resolve(__dirname,'../dist'),
@@ -50,6 +49,7 @@ module.exports ={
         new MiniCssExtractPlugin({
             filename:'main.css'
         }),
+        new CleanWebpackPlugin(),
     ]
         
 }; 

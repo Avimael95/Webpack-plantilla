@@ -1,6 +1,7 @@
-$colorText:red;
+$colorText:#ffffff;
+$colorFondo:#dd167a;
 body{
-    background-color: #16afdd;
+    background-color: $colorFondo;
 }
 
 h1{
