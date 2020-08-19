@@ -1,9 +1,10 @@
 const Path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin= require('mini-css-extract-plugin');
+const loader = require('sass-loader');
 
 module.exports ={
-    mode:'production',
+    mode:'development',
     entry:'./src/index.js',
     output:{
         path:Path.resolve(__dirname,'../dist'),
@@ -18,8 +19,19 @@ module.exports ={
                     'css-loader',
                     'sass-loader'
                 ]
+            },
+            {
+                test:/\.(png|svg|jpg|gif)$/,
+                use:[
+                    {
+                        loader: 'file-loader',
+                        options:{
+                            esModule:false,
+                            name:'static/[name].[ext]',
+                        }
+                    }
+                ]
             }
-
         ],
     },
     plugins:[
