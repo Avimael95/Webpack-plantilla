@@ -1,13 +1,23 @@
-$colorText:#ffffff;
-$colorFondo:#dd167a;
-body{
-    background-color: $colorFondo;
-}
 
-h1{
-    color:$colorText;
-}
+    @import "_variales.scss";
+    body{
+        background-color: $colorFondo;
+    }
 
-h2{
-    color: $colorText;
-}
+    h1{
+        color:$colorText;
+    }
+
+    h2{
+        color: $colorText;
+    }
+
+    body{
+        margin: 0px;
+        padding: 0px;
+    }
+
+    .container{
+        display: flex;
+        justify-content: center;
+    }
