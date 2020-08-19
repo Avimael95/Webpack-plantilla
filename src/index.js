@@ -1,2 +1,2 @@
 
-alert('Hola desde la aplicacion de webpack');
+require('./styles/main.css');
