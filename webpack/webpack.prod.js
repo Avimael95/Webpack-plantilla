@@ -3,11 +3,10 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin= require('mini-css-extract-plugin');
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 module.exports ={
-    mode:'development',
-    entry:'./src/index.js',
+    mode:'production',
     output:{
         path:Path.resolve(__dirname,'../dist'),
-        filename:'bundle.js'
+        filename:'bundle.[contenthash].js'
     },
     module:{
         rules:[
@@ -47,7 +46,7 @@ module.exports ={
             // }
         }),
         new MiniCssExtractPlugin({
-            filename:'main.css'
+            filename:'main.[contenthash].css'
         }),
         new CleanWebpackPlugin(),
     ]
